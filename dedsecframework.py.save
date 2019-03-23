@@ -1,0 +1,38 @@
+import socket
+import os
+import sys
+import csv
+
+os.system("clear")
+print (" __________________________________________________________________")
+print ("|           ____  ______   ____  ______  ______________            |")
+print ("|          / __ \/ ____/  / __ \/ ____/ / ____ /_______\           |")
+print ("|         / / / / ___/   / / / /\____ \/ ___/ /                    |")
+print ("|        / /_/ / /_____ / /_/ /_____/ /_____/ \_______             |")
+print ("|       /_____/_______//_____/_______/______/\________/            |")
+print ("|                                                                  |")
+print ("|                >:DE`DSEC Framework Tools                         |")
+print ("|                                                                  |")
+print ("|__________________________________________________________________|")
+print (" ") 
+
+framework = raw_input(">DE'DSEC:/ ")
+os.system(framework)
+def framework_use():
+	framework = raw_input(">DE'DSEC:/ ")
+	os.system(framework)
+def show_modules("show modules"):
+	if fra
+        	os.system("cat modules")
+        	#path = ("lib")
+        	#csv.reader(path)
+        	#os.system("ls")
+        	framework_use()
+
+if framework == "show modules":
+	os.system("cat modules")
+	#path = ("lib")
+	#csv.reader(path)
+	#os.system("ls")
+	framework_use()
+	if framework == show modules():
