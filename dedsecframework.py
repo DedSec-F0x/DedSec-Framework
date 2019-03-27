@@ -52,3 +52,6 @@ if "windowsc" in framework:
 if "use exploit/ssh/UploadArchive" in framework:
 	os.chdir("/root/Framework/exploit/ssh")
 	os.system("python UploadArchive.py")
+if "use exploit/scan/scan-port" in framework:
+        os.chdir("/root/Framework/exploit/scan")
+        os.system("python scan-port.py")
