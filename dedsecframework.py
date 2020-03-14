@@ -24,14 +24,14 @@ def framework_use():
 	os.system(framework)
 
 def use(exploit):
-	exploit = os.chdir("/root/DedSec-Framework/exploit")
+	exploit = os.chdir("exploit")
 	os.system("cat modules")
 if framework == "show modules":
 	#os.system("cat modules")
 	#path = ("lib")
 	#csv.reader(path)
 	#os.system("ls")
-	diretorio = os.chdir("/root/DedSec-Framework/exploit")
+	diretorio = os.chdir("exploit")
 	os.system("cat modules")
 	#print diretorio
 	print("agora selecione o module para o exploit") 
@@ -39,12 +39,14 @@ if framework == "show modules":
 	os.system(framework)
 
 if "use exploit/python/backdoor_listener" in framework:
-	os.chdir("/root/DedSec-Framework/exploit/python")
+	os.chdir("exploit")
+	os.chdir("python")
 	framework = raw_input(">DE'DSEC:/(exploit/python/backdoor_listener): ")
 	os.system("./backdoor_listener.sh")
 
 if "create exploit/python/backdoor" in framework:
-	os.chdir("/root/DedSec-Framework/exploit/python")
+	os.chdir("exploit")
+	os.chdir("python")
 	os.system("python backdoor.py")
 
 if "windowsc" in framework:
@@ -55,13 +57,16 @@ if "windowsc" in framework:
 	os.system("./pyinstaller.py --buildpath=/root/Framework/Malware -p /root/Desktop/Framework/Malware -y -F --noconsole " + path)
 
 if "use exploit/ssh/UploadArchive" in framework:
-	os.chdir("/root/DedSec-Framework/exploit/ssh")
+	os.chdir("exploit")
+	os.chdir("ssh")
 	os.system("python UploadArchive.py")
 
 if "use exploit/scan/scan-port" in framework:
-        os.chdir("/root/DedSec-Framework/exploit/scan")
+        os.chdir("exploit")
+	os.chdir("scan")
         os.system("python scan-port.py")
 
 if "use exploit/domain/subdomain_finder" in framework:
-	os.chdir("/root/DedSec-Framework/exploit/domain/")
+	os.chdir("exploit")
+	os.chdir("domain")
 	os.system("python subdomain_finder.py")
